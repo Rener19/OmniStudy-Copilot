@@ -6,3 +6,6 @@
 - When generating schemas, strictly use Pydantic for the Python backend.
 - Maintain accurate `page_number` tracking for chunking and prompt generation.
 - Consult `RULES.md` for architecture and database schema rules.
+- **Expo Router SEO**: Use `import Head from 'expo-router/head'` (default export) and ensure `"web": { "output": "static" }` is configured in `app.json` for proper SEO/SMO metadata generation.
+- **React Native Web Responsiveness**: Always leverage `Platform.OS === 'web'` to conditionally scale typography (e.g., larger headers for desktop) and adapt flex layouts (`row` vs `column`) for mobile edge cases.
+- **TypeScript / JSX Imports**: Explicitly include `import React from 'react'` in all `.tsx` components to prevent ESLint/TS compilation errors (`error TS2305` or JSX missing errors), depending on the Expo babel configuration.
