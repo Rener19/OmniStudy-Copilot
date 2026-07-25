@@ -1,84 +1,40 @@
 import React from 'react';
-import { StyleSheet, View, Text, Platform } from 'react-native';
+import { View, Text } from 'react-native';
 import { Image } from 'expo-image';
+import ragImg from '../../../assets/images/rag.png';
+import flashcardsImg from '../../../assets/images/flashcards.png';
+import quizzesImg from '../../../assets/images/quizzes.png';
 
 const features = [
   {
     title: 'RAG Chat Engine',
     description: 'Query your documents directly with real-time streaming responses and exact page citations.',
-    image: require('../../../assets/images/rag.png')
+    image: ragImg
   },
   {
     title: 'Spaced-Repetition',
     description: 'AI-generated flashcards scheduled using cognitive science algorithms to maximize retention.',
-    image: require('../../../assets/images/flashcards.png')
+    image: flashcardsImg
   },
   {
     title: 'Dynamic Quizzes',
     description: 'Test your knowledge with auto-generated assessments and immediate grading.',
-    image: require('../../../assets/images/quizzes.png')
+    image: quizzesImg
   }
 ];
 
 export function FeatureGrid() {
   return (
-    <View style={styles.container}>
+    <View className="flex w-full flex-col flex-wrap justify-center gap-8 bg-white px-8 py-[60px] md:flex-row">
       {features.map((f, i) => (
-        <View key={i} style={styles.card}>
-          <Image source={f.image} style={styles.image} contentFit="cover" />
-          <View style={styles.content}>
-            <Text style={styles.title}>{f.title}</Text>
-            <Text style={styles.description}>{f.description}</Text>
+        <View key={i} className="min-w-[320px] overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_10px_20px_rgba(0,0,0,0.1)] elevation-8 md:flex-1">
+          <Image source={f.image} className="h-[220px] w-full bg-gray-50" contentFit="cover" />
+          <View className="p-6">
+            <Text className="mb-3 text-2xl font-extrabold text-gray-900">{f.title}</Text>
+            <Text className="text-base leading-6 text-gray-600">{f.description}</Text>
           </View>
         </View>
       ))}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: Platform.OS === 'web' ? 'row' : 'column',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: 32,
-    paddingHorizontal: 32,
-    paddingVertical: 60,
-    backgroundColor: '#FFFFFF',
-    width: '100%',
-  },
-  card: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 16,
-    flex: Platform.OS === 'web' ? 1 : undefined,
-    minWidth: 320,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.1,
-    shadowRadius: 20,
-    elevation: 8,
-    borderWidth: 1,
-    borderColor: '#F3F4F6',
-    overflow: 'hidden',
-  },
-  image: {
-    width: '100%',
-    height: 220,
-    backgroundColor: '#F9FAFB',
-  },
-  content: {
-    padding: 24,
-  },
-  title: {
-    color: '#111827',
-    fontSize: 24,
-    fontWeight: '800',
-    marginBottom: 12,
-    fontFamily: Platform.OS === 'ios' ? 'System' : 'Roboto',
-  },
-  description: {
-    color: '#4B5563',
-    fontSize: 16,
-    lineHeight: 24,
-  },
-});

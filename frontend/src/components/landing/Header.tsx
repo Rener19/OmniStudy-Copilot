@@ -1,66 +1,20 @@
 import React from 'react';
-import { StyleSheet, View, Text, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 export function Header() {
   return (
-    <View style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Text style={styles.logoText}>OmniStudy</Text>
+    <View className="w-full flex-row items-center justify-between border-b border-gray-200 bg-white px-8 py-5">
+      <View>
+        <Text className="text-3xl font-extrabold text-indigo-600">OmniStudy</Text>
       </View>
-      <View style={styles.authContainer}>
-        <TouchableOpacity style={styles.loginBtn}>
-          <Text style={styles.loginText}>Login</Text>
+      <View className="flex-row items-center gap-4">
+        <TouchableOpacity className="px-5 py-2.5">
+          <Text className="text-base font-semibold text-gray-700">Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.registerBtn}>
-          <Text style={styles.registerText}>Register</Text>
+        <TouchableOpacity className="rounded-lg bg-indigo-600 px-5 py-2.5">
+          <Text className="text-base font-semibold text-white">Register</Text>
         </TouchableOpacity>
       </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: 20,
-    paddingHorizontal: 32,
-    backgroundColor: '#FFFFFF',
-    borderBottomWidth: 1,
-    borderBottomColor: '#E5E7EB',
-    width: '100%',
-  },
-  logoContainer: {},
-  logoText: {
-    color: '#4F46E5', // Vibrant Indigo
-    fontSize: 28,
-    fontWeight: '800',
-    fontFamily: Platform.OS === 'ios' ? 'System' : 'Roboto',
-  },
-  authContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 16,
-  },
-  loginBtn: {
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-  },
-  loginText: {
-    color: '#374151',
-    fontSize: 16,
-    fontWeight: '600',
-  },
-  registerBtn: {
-    backgroundColor: '#4F46E5',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 8,
-  },
-  registerText: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '600',
-  },
-});
