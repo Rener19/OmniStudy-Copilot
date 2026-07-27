@@ -12,27 +12,31 @@ export function Header() {
         
         {/* Left Side: Logo & Desktop Nav */}
         <div className="flex items-center gap-10">
-          <Link href="/" className="flex items-center gap-2 text-2xl font-black text-foreground font-sans tracking-tight hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 rounded-lg bg-foreground flex items-center justify-center">
-              <span className="text-background text-sm font-bold">O</span>
+          <Link href="/" className="flex items-center gap-3 text-3xl font-black text-foreground font-sans tracking-tight hover:opacity-80 transition-opacity">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent shadow-md shrink-0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2L4 7L12 12L20 7L12 2Z" />
+                <path d="M4 12L12 17L20 12" className="opacity-70" />
+                <path d="M4 17L12 22L20 17" className="opacity-40" />
+              </svg>
             </div>
             OmniStudy
           </Link>
-          <nav className="hidden md:flex flex-row items-center gap-6">
-            <Link href="/chat" className="text-sm font-semibold text-foreground hover:text-primary transition-colors font-mono">Chat</Link>
-            <Link href="/flashcards" className="text-sm font-semibold text-foreground hover:text-primary transition-colors font-mono">Flashcards</Link>
-            <Link href="/quizzes" className="text-sm font-semibold text-foreground hover:text-primary transition-colors font-mono">Quizzes</Link>
+          <nav className="hidden md:flex flex-row items-center gap-8">
+            <Link href="/chat" className="text-base font-semibold text-foreground hover:text-primary transition-colors font-mono">Chat</Link>
+            <Link href="/flashcards" className="text-base font-semibold text-foreground hover:text-primary transition-colors font-mono">Flashcards</Link>
+            <Link href="/quizzes" className="text-base font-semibold text-foreground hover:text-primary transition-colors font-mono">Quizzes</Link>
           </nav>
         </div>
 
         {/* Right Side: Desktop Buttons & Mobile Toggle */}
         <div className="flex flex-row items-center gap-4">
           <div className="hidden md:flex items-center gap-4">
-            <button className="px-5 py-2.5 rounded-lg hover:bg-muted transition-colors font-mono">
-              <span className="text-sm font-semibold text-foreground">Login</span>
+            <button className="px-6 py-3 rounded-lg hover:bg-muted transition-colors font-mono">
+              <span className="text-base font-semibold text-foreground">Login</span>
             </button>
-            <button className="rounded-lg bg-foreground px-5 py-2.5 hover:bg-gray-800 dark:hover:bg-gray-300 transition-colors font-mono">
-              <span className="text-sm font-semibold text-background">Register</span>
+            <button className="rounded-lg bg-foreground px-6 py-3 hover:bg-gray-800 dark:hover:bg-gray-300 transition-colors font-mono">
+              <span className="text-base font-semibold text-background">Register</span>
             </button>
           </div>
           
