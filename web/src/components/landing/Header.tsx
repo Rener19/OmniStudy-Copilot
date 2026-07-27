@@ -2,18 +2,19 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-md px-4 md:px-8 py-4">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#022C22]/90 backdrop-blur-md px-4 md:px-8 py-4">
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
         
         {/* Left Side: Logo & Desktop Nav */}
         <div className="flex items-center gap-10">
-          <Link href="/" className="flex items-center gap-3 text-3xl font-black text-foreground font-sans tracking-tight hover:opacity-80 transition-opacity">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent shadow-md shrink-0">
+          <Link href="/" className="flex items-center gap-3 text-3xl font-black text-white font-sans tracking-tight hover:opacity-80 transition-opacity">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#22C55E] to-[#4ADE80] shadow-md shrink-0">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 2L4 7L12 12L20 7L12 2Z" />
                 <path d="M4 12L12 17L20 12" className="opacity-70" />
@@ -23,20 +24,21 @@ export function Header() {
             OmniStudy
           </Link>
           <nav className="hidden md:flex flex-row items-center gap-8">
-            <Link href="/chat" className="text-base font-semibold text-foreground hover:text-primary transition-colors font-mono">Chat</Link>
-            <Link href="/flashcards" className="text-base font-semibold text-foreground hover:text-primary transition-colors font-mono">Flashcards</Link>
-            <Link href="/quizzes" className="text-base font-semibold text-foreground hover:text-primary transition-colors font-mono">Quizzes</Link>
+            <Link href="/chat" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Chat</Link>
+            <Link href="/flashcards" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Flashcards</Link>
+            <Link href="/quizzes" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Quizzes</Link>
           </nav>
         </div>
 
         {/* Right Side: Desktop Buttons & Mobile Toggle */}
         <div className="flex flex-row items-center gap-4">
-          <div className="hidden md:flex items-center gap-4">
-            <button className="px-6 py-3 rounded-lg hover:bg-muted transition-colors font-mono">
-              <span className="text-base font-semibold text-foreground">Login</span>
+          <div className="hidden md:flex items-center gap-4 relative">
+            <ThemeToggle />
+            <button className="px-6 py-3 rounded-lg bg-transparent hover:bg-white/10 transition-colors font-mono ml-2">
+              <span className="text-base font-semibold text-white">Login</span>
             </button>
-            <button className="rounded-lg bg-foreground px-6 py-3 hover:bg-gray-800 dark:hover:bg-gray-300 transition-colors font-mono">
-              <span className="text-base font-semibold text-background">Register</span>
+            <button className="rounded-lg bg-[#22C55E] px-6 py-3 hover:bg-[#16a34a] transition-colors font-mono">
+              <span className="text-base font-semibold text-white">Register</span>
             </button>
           </div>
           

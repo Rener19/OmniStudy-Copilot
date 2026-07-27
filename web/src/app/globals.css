@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
   --background: #FFFFFF;
   --foreground: #022C22;
@@ -20,21 +22,24 @@
   --font-mono: var(--font-dm-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #022C22;
-    --foreground: #FFFFFF;
-    --primary: #22C55E;
-    --secondary: #A7F3D0;
-    --accent: #4ADE80;
-    --muted: #064E3B;
-  }
+:root[data-theme="dark"] {
+  --background: #022C22;
+  --foreground: #FFFFFF;
+  --primary: #22C55E;
+  --secondary: #A7F3D0;
+  --accent: #4ADE80;
+  --muted: #064E3B;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
+}
+
+*, ::before, ::after {
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
 }
 
 /* Accessibility Hardening */
