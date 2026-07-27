@@ -10,11 +10,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#022C22]/90 backdrop-blur-md px-4 md:px-8 py-4">
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
-        
+
         {/* Left Side: Logo & Desktop Nav */}
         <div className="flex items-center gap-10">
           <Link href="/" className="flex items-center gap-3 text-3xl font-black text-white font-sans tracking-tight hover:opacity-80 transition-opacity">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#22C55E] to-[#4ADE80] shadow-md shrink-0">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#16A34A] to-[#84CC16] shadow-md shrink-0">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 2L4 7L12 12L20 7L12 2Z" />
                 <path d="M4 12L12 17L20 12" className="opacity-70" />
@@ -41,9 +41,9 @@ export function Header() {
               <span className="text-base font-semibold text-white">Register</span>
             </button>
           </div>
-          
+
           {/* Hamburger Menu Toggle (Mobile Only) */}
-          <button 
+          <button
             className="md:hidden p-2 rounded-md hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle mobile menu"
@@ -64,22 +64,22 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border p-4 flex flex-col gap-4 shadow-lg">
           <nav className="flex flex-col gap-2">
-            <Link 
-              href="/chat" 
+            <Link
+              href="/chat"
               className="px-4 py-3 text-base font-semibold text-foreground hover:bg-muted rounded-lg font-mono"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Chat
             </Link>
-            <Link 
-              href="/flashcards" 
+            <Link
+              href="/flashcards"
               className="px-4 py-3 text-base font-semibold text-foreground hover:bg-muted rounded-lg font-mono"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Flashcards
             </Link>
-            <Link 
-              href="/quizzes" 
+            <Link
+              href="/quizzes"
               className="px-4 py-3 text-base font-semibold text-foreground hover:bg-muted rounded-lg font-mono"
               onClick={() => setIsMobileMenuOpen(false)}
             >
