@@ -21,7 +21,7 @@ export function Header() {
                 <path d="M4 17L12 22L20 17" className="opacity-40" />
               </svg>
             </div>
-            OmniStudy
+            Kabisado
           </Link>
           <nav className="hidden md:flex flex-row items-center gap-8">
             <Link href="/chat" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Chat</Link>

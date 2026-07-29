@@ -6,7 +6,7 @@
 
 ---
 
-**Project:** OmniStudy Copilot
+**Project:** Kabisado Copilot
 **Generated:** 2026-07-27 13:00:12
 **Category:** Study Together / Virtual Coworking
 

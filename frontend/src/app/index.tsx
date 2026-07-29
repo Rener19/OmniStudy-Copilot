@@ -13,9 +13,9 @@ export default function LandingPage() {
   return (
     <>
       <Head>
-        <title>OmniStudy Copilot - Supercharge Your Focus</title>
-        <meta name="description" content="OmniStudy transforms your educational PDFs into an interactive learning engine. RAG Chat, Spaced-Repetition, and Dynamic Quizzes." />
-        <meta property="og:title" content="OmniStudy Copilot" />
+        <title>Kabisado Copilot - Supercharge Your Focus</title>
+        <meta name="description" content="Kabisado transforms your educational PDFs into an interactive learning engine. RAG Chat, Spaced-Repetition, and Dynamic Quizzes." />
+        <meta property="og:title" content="Kabisado Copilot" />
         <meta property="og:description" content="Read, retain, and review—all in one place." />
         <meta property="og:type" content="website" />
       </Head>

@@ -1,4 +1,4 @@
-# Agent Instructions for OmniStudy Copilot
+# Agent Instructions for Kabisado Copilot
 
 - Always adhere to the tech stack defined in `RULES.md` (React Native/Expo, FastAPI, Supabase, Gemini 1.5 Pro/Flash).
 - Maximize cost-efficiency: restrict architectures to free-tier constraints (Render free tier, Supabase free tier).

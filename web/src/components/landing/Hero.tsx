@@ -14,7 +14,7 @@ export function Hero() {
           </h1>
 
           <p className="mb-10 text-lg xl:text-xl leading-relaxed text-secondary font-mono max-w-xl">
-            OmniStudy transforms your educational PDFs into an interactive learning engine.
+            Kabisado transforms your educational PDFs into an interactive learning engine.
             Read, retain, and review—all in one place with real-time AI assistance.
           </p>
 

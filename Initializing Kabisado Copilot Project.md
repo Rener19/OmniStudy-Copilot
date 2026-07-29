@@ -6,11 +6,11 @@ Note: _This is purely the output of the chat conversation and does not contain a
 
 Role & Context
 
-You are a Senior Full-Stack AI Engineer and my coding copilot. We are building my 4th-year computer science internship capstone project called "OmniStudy Copilot" over an 8-week sprint.
+You are a Senior Full-Stack AI Engineer and my coding copilot. We are building my 4th-year computer science internship capstone project called "Kabisado Copilot" over an 8-week sprint.
 
 The goal is to build a production-ready, $0-deployment-cost application that transforms uploaded PDFs into an interactive learning engine. It must prove high engineering rigor, focusing on streaming UI, state management, complex gesture handling, and robust AI data pipelines.
 
-Project Overview: "OmniStudy Copilot"
+Project Overview: "Kabisado Copilot"
 
 A mobile-first web application (cross-platform) that ingests educational PDFs and provides three core learning modules:
 
@@ -80,7 +80,7 @@ quizzes: id, document_id, score, metadata.
 
 your first task is to initialize the repo with a claude.md or rules file for the planned project
 
-*Listed directory [OmniStudy Copilot](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot) *
+*Listed directory [Kabisado Copilot](file:///c:/Users/raini/Desktop/Kabisado%20Copilot) *
 
 *Edited relevant file*
 
@@ -88,11 +88,11 @@ your first task is to initialize the repo with a claude.md or rules file for the
 
 ### Planner Response
 
-I have successfully initialized the repository with the requested rules files to serve as the foundation for the **OmniStudy Copilot** project.
+I have successfully initialized the repository with the requested rules files to serve as the foundation for the **Kabisado Copilot** project.
 
 I created two files:
-1. [RULES.md](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/RULES.md) - Contains the complete project context, tech stack constraints, core modules, and initial database schema. This serves as the primary ground truth for the project.
-2. [.agents/AGENTS.md](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/.agents/AGENTS.md) - Project-scoped AI rules to ensure that I (and any future AI assistants) strictly adhere to the $0-deployment-cost tech stack, maintain engineering rigor, and follow your specified patterns (like Pydantic usage and `page_number` tracking).
+1. [RULES.md](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/RULES.md) - Contains the complete project context, tech stack constraints, core modules, and initial database schema. This serves as the primary ground truth for the project.
+2. [.agents/AGENTS.md](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/.agents/AGENTS.md) - Project-scoped AI rules to ensure that I (and any future AI assistants) strictly adhere to the $0-deployment-cost tech stack, maintain engineering rigor, and follow your specified patterns (like Pydantic usage and `page_number` tracking).
 
 Whenever we work on new features, I will automatically use these guidelines to make architectural and coding decisions.
 
@@ -107,13 +107,13 @@ Let me know which direction you'd prefer to take!
 
 next now initalize a readme.md for the project
 
-*Viewed [RULES.md](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/RULES.md) *
+*Viewed [RULES.md](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/RULES.md) *
 
 *Edited relevant file*
 
 ### Planner Response
 
-I have successfully created the [README.md](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/README.md) file!
+I have successfully created the [README.md](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/README.md) file!
 
 It outlines the project's purpose, key features, tech stack, and high-level architecture in a clean, professional format suitable for a 4th-year capstone project. I've also left a placeholder section for the "Local Setup" instructions, which we can fill out once we start scaffolding the frontend and backend.
 
@@ -123,13 +123,13 @@ Would you like to move on to setting up the codebase next? We could start by set
 
 can you also add a license file
 
-*Viewed [README.md](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/README.md) *
+*Viewed [README.md](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/README.md) *
 
 *Edited relevant file*
 
 ### Planner Response
 
-I've added a standard MIT [LICENSE](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/LICENSE) file to the repository. This is a very common and permissive license that works well for student projects and open-source applications, as it allows others to use, modify, and distribute the code freely while limiting your liability.
+I've added a standard MIT [LICENSE](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/LICENSE) file to the repository. This is a very common and permissive license that works well for student projects and open-source applications, as it allows others to use, modify, and distribute the code freely while limiting your liability.
 
 Let me know if you'd prefer a different license (like Apache 2.0 or GPL) and I can easily update it!
 
@@ -155,9 +155,9 @@ If you would like to add Tailwind (via NativeWind) to the Expo frontend, let me 
 
 let's try to apply tailwind in this project, but still keeping it optimized for both mobile and web in connection with our react native
 
-*Viewed [package.json](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/package.json) *
+*Viewed [package.json](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/package.json) *
 
-*Listed directory [frontend](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend) *
+*Listed directory [frontend](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend) *
 
 *Edited relevant file*
 
@@ -183,11 +183,9 @@ lets go with tailwind css v3.x and nativewindv4, you should migrate the existing
 
 *User accepted the command `npm.cmd install nativewind tailwindcss@3`*
 
-*Viewed [theme.ts](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/constants/theme.ts) *
+*Viewed [theme.ts](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/constants/theme.ts) *
 
-*Viewed [global.css](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/global.css) *
-
-*Edited relevant file*
+*Viewed [global.css](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/global.css) *
 
 *Edited relevant file*
 
@@ -195,41 +193,43 @@ lets go with tailwind css v3.x and nativewindv4, you should migrate the existing
 
 *Edited relevant file*
 
-*Viewed [expo-env.d.ts](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/expo-env.d.ts) *
+*Edited relevant file*
 
-*Viewed [global.d.ts](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/global.d.ts) *
+*Viewed [expo-env.d.ts](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/expo-env.d.ts) *
+
+*Viewed [global.d.ts](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/global.d.ts) *
 
 *Edited relevant file*
 
-*Viewed [_layout.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/app/_layout.tsx) *
+*Viewed [_layout.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/app/_layout.tsx) *
 
 *Edited relevant file*
 
-*Viewed [Hero.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/Hero.tsx) *
-
-*Edited relevant file*
-
-*Edited relevant file*
-
-*Viewed [FeatureGrid.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/FeatureGrid.tsx) *
+*Viewed [Hero.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/Hero.tsx) *
 
 *Edited relevant file*
 
 *Edited relevant file*
 
-*Viewed [ValueProp.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/ValueProp.tsx) *
+*Viewed [FeatureGrid.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/FeatureGrid.tsx) *
 
 *Edited relevant file*
 
 *Edited relevant file*
 
-*Listed directory [landing](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing) *
-
-*Viewed [Footer.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/Footer.tsx) *
+*Viewed [ValueProp.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/ValueProp.tsx) *
 
 *Edited relevant file*
 
-*Viewed [Header.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/Header.tsx) *
+*Edited relevant file*
+
+*Listed directory [landing](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing) *
+
+*Viewed [Footer.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/Footer.tsx) *
+
+*Edited relevant file*
+
+*Viewed [Header.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/Header.tsx) *
 
 *Edited relevant file*
 
@@ -269,7 +269,7 @@ Responsive at 375px and 1280px
 
 lets perform these instructions, make sure to accomplish each one, help me later in the vercel deployment but for now do the others
 
-*Viewed [.gitignore](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/.gitignore) *
+*Viewed [.gitignore](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/.gitignore) *
 
 *Edited relevant file*
 
@@ -358,7 +358,7 @@ We can use a tool called **Solito**, which acts as a bridge between React Native
 - **Cons:** It is notoriously difficult to configure and can slow down our 8-week sprint significantly due to complex dependency management.
 
 ### Option 3: Pivot entirely to Next.js (Web Only)
-If you decide that mobile apps aren't strictly necessary for the capstone, we can delete the Expo project and build OmniStudy purely as a Next.js web app. You can still make it a "Progressive Web App" (PWA) so users can save it to their phone's home screen, but it won't be in the App Stores.
+If you decide that mobile apps aren't strictly necessary for the capstone, we can delete the Expo project and build Kabisado purely as a Next.js web app. You can still make it a "Progressive Web App" (PWA) so users can save it to their phone's home screen, but it won't be in the App Stores.
 
 **Which path makes the most sense for your capstone project goals?** If you want to keep the mobile apps, I highly suggest Option 1!
 
@@ -393,7 +393,7 @@ ok im satisfied witth the plan, proceed with the plan now
 
 *Edited relevant file*
 
-*User accepted the command `Move-Item -Path "c:\Users\raini\Desktop\OmniStudy Copilot\frontend" -Destination "c:\Users\raini\Desktop\OmniStudy Copilot\frontend-expo"`*
+*User accepted the command `Move-Item -Path "c:\Users\raini\Desktop\Kabisado Copilot\frontend" -Destination "c:\Users\raini\Desktop\Kabisado Copilot\frontend-expo"`*
 
 *User accepted the command `npx -y create-next-app@latest --help`*
 
@@ -407,13 +407,13 @@ I am currently running the command to scaffold the Next.js application into the 
 
 I will automatically resume and set up your placeholder routes, Tailwind configurations, and navigation as soon as the installation completes!
 
-*Listed directory [web](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/web) *
+*Listed directory [web](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/web) *
 
 *Edited relevant file*
 
-*Viewed [globals.css](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/web/src/app/globals.css) *
+*Viewed [globals.css](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/web/src/app/globals.css) *
 
-*Viewed [layout.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/web/src/app/layout.tsx) *
+*Viewed [layout.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/web/src/app/layout.tsx) *
 
 *Edited relevant file*
 
@@ -498,7 +498,7 @@ Here is a checklist of exactly what we have accomplished versus what you need to
 ### 🚀 What YOU need to do right now to finish the assignment:
 Since I do not have access to your personal Vercel or GitHub accounts, you must complete the final deployment step to get your deliverables (the repo link and preview URL):
 
-1. **Commit your code to GitHub:** Open a terminal, navigate to the `OmniStudy Copilot` folder, and push this code to a new or existing GitHub repository.
+1. **Commit your code to GitHub:** Open a terminal, navigate to the `Kabisado Copilot` folder, and push this code to a new or existing GitHub repository.
 2. **Connect to Vercel:** 
    - Go to Vercel.com and click **Add New Project**.
    - Import your GitHub repo.
@@ -511,19 +511,19 @@ Once you do that, you will have the **Live Preview URL** and the **Repo Link** t
 
 can you make it so that the new UI looks exactly the same as the old UI from react native that we made
 
-*Listed directory [landing](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing) *
+*Listed directory [landing](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing) *
 
-*Viewed [Hero.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/Hero.tsx) *
+*Viewed [Hero.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/Hero.tsx) *
 
-*Viewed [FeatureGrid.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/FeatureGrid.tsx) *
+*Viewed [FeatureGrid.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/FeatureGrid.tsx) *
 
-*Viewed [ValueProp.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/ValueProp.tsx) *
+*Viewed [ValueProp.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/ValueProp.tsx) *
 
-*Viewed [Header.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/Header.tsx) *
+*Viewed [Header.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/Header.tsx) *
 
-*Viewed [Footer.tsx](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/src/components/landing/Footer.tsx) *
+*Viewed [Footer.tsx](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/src/components/landing/Footer.tsx) *
 
-*Listed directory [images](file:///c:/Users/raini/Desktop/OmniStudy%20Copilot/frontend/assets/images) *
+*Listed directory [images](file:///c:/Users/raini/Desktop/Kabisado%20Copilot/frontend/assets/images) *
 
 *Edited relevant file*
 
@@ -541,7 +541,7 @@ I've outlined exactly how I will do this in the [implementation plan](file:///c:
 
 *Edited relevant file*
 
-*User accepted the command `New-Item -ItemType Directory -Force -Path "c:\Users\raini\Desktop\OmniStudy Copilot\web\public\images"; Copy-Item -Path "c:\Users\raini\Desktop\OmniStudy Copilot\frontend\assets\images\*.png" -Destination "c:\Users\raini\Desktop\OmniStudy Copilot\web\public\images\"`*
+*User accepted the command `New-Item -ItemType Directory -Force -Path "c:\Users\raini\Desktop\Kabisado Copilot\web\public\images"; Copy-Item -Path "c:\Users\raini\Desktop\Kabisado Copilot\frontend\assets\images\*.png" -Destination "c:\Users\raini\Desktop\Kabisado Copilot\web\public\images\"`*
 
 *Edited relevant file*
 

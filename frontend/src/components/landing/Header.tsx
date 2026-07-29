@@ -5,7 +5,7 @@ export function Header() {
   return (
     <View className="w-full flex-row items-center justify-between border-b border-gray-200 bg-white px-8 py-5">
       <View>
-        <Text className="text-3xl font-extrabold text-indigo-600">OmniStudy</Text>
+        <Text className="text-3xl font-extrabold text-indigo-600">Kabisado</Text>
       </View>
       <View className="flex-row items-center gap-4">
         <TouchableOpacity className="px-5 py-2.5">

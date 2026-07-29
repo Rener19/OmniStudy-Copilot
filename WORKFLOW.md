@@ -1,6 +1,6 @@
 # Branch Comparison: `vague-prompt` vs `frontend-goodprompt`
 
-This document outlines the workflow, implementation differences, and evaluation criteria between the initial `vague-prompt` branch and the fully realized `frontend-goodprompt` branch for the OmniStudy Copilot landing page.
+This document outlines the workflow, implementation differences, and evaluation criteria between the initial `vague-prompt` branch and the fully realized `frontend-goodprompt` branch for the Kabisado Copilot landing page.
 
 ## Correctness & AI Mistakes Caught
 In the initial `vague-prompt` branch, the implementation of the landing page was basic and lacked proper metadata configuration. When transitioning to the `frontend-goodprompt` branch, a critical AI mistake was caught and corrected: **The Expo Router `Head` component import**. 

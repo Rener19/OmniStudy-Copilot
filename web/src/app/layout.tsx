@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "OmniStudy Copilot",
+  title: "Kabisado Copilot",
   description: "AI-Powered PDF Study Companion",
 };
 

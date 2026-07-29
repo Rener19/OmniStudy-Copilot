@@ -1,6 +1,6 @@
-# OmniStudy Copilot 🎓
+# Kabisado Copilot 🎓
 
-OmniStudy Copilot is a mobile-first, AI-powered learning engine that transforms uploaded educational PDFs into an interactive learning experience. This project is a 4th-year computer science internship capstone, built over an 8-week sprint with a strong focus on high engineering rigor, streaming UI, state management, complex gesture handling, and robust AI data pipelines.
+Kabisado Copilot is a mobile-first, AI-powered learning engine that transforms uploaded educational PDFs into an interactive learning experience. This project is a 4th-year computer science internship capstone, built over an 8-week sprint with a strong focus on high engineering rigor, streaming UI, state management, complex gesture handling, and robust AI data pipelines.
 
 ## 🚀 Features
 

@@ -17,7 +17,7 @@ export function Footer() {
                   <path d="M4 17L12 22L20 17" className="opacity-40" />
                 </svg>
               </div>
-              OmniStudy
+              Kabisado
             </Link>
             <p className="text-secondary font-mono text-sm leading-relaxed max-w-md">
               Transform your educational PDFs into an interactive learning engine. Read, retain, and review—all in one place with real-time AI assistance.
@@ -46,7 +46,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border">
           <p className="text-sm text-secondary font-mono mb-4 md:mb-0">
-            © {new Date().getFullYear()} OmniStudy Copilot Team. All rights reserved.
+            © {new Date().getFullYear()} Kabisado Copilot Team. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {/* Social Icons Placeholder */}

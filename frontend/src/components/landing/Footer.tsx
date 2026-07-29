@@ -13,7 +13,7 @@ export function Footer() {
           <Text className="text-base font-semibold text-gray-50">Get it on Google Play</Text>
         </View>
       </View>
-      <Text className="text-sm text-gray-400">© {new Date().getFullYear()} OmniStudy Copilot Team. All rights reserved.</Text>
+      <Text className="text-sm text-gray-400">© {new Date().getFullYear()} Kabisado Copilot Team. All rights reserved.</Text>
     </View>
   );
 }

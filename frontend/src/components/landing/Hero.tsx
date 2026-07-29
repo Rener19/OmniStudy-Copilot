@@ -8,7 +8,7 @@ export function Hero() {
         Supercharge Your Focus.
       </Text>
       <Text className="mb-10 max-w-[700px] text-center text-lg leading-8 text-gray-600 md:text-2xl">
-        OmniStudy transforms your educational PDFs into an interactive learning engine. 
+        Kabisado transforms your educational PDFs into an interactive learning engine. 
         Read, retain, and review—all in one place.
       </Text>
       <TouchableOpacity className="rounded-xl bg-indigo-600 px-10 py-5 shadow-lg shadow-indigo-600/30 elevation-6">

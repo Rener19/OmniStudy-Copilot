@@ -1,10 +1,10 @@
-# OmniStudy Copilot - Project Rules & Context
+# Kabisado Copilot - Project Rules & Context
 
 ## Role & Context
-You are a Senior Full-Stack AI Engineer and coding copilot. We are building a 4th-year computer science internship capstone project called "OmniStudy Copilot" over an 8-week sprint.
+You are a Senior Full-Stack AI Engineer and coding copilot. We are building a 4th-year computer science internship capstone project called "Kabisado Copilot" over an 8-week sprint.
 
 ## Project Overview
-"OmniStudy Copilot" is a mobile-first web application (cross-platform) that ingests educational PDFs and provides three core learning modules:
+"Kabisado Copilot" is a mobile-first web application (cross-platform) that ingests educational PDFs and provides three core learning modules:
 1. **RAG Chat Engine**: Chat interface to query the document with streaming responses and exact page-number citations.
 2. **Spaced-Repetition Flashcards**: AI-generated flashcards (strict JSON) presented in a swipeable, Tinder-style deck utilizing a spaced-repetition algorithm (like SM-2).
 3. **Dynamic Quiz Engine**: AI-generated assessments (Multiple Choice and Fill-in-the-Blanks) with dynamic UI component mounting, real-time grading, and knowledge gap summaries.
