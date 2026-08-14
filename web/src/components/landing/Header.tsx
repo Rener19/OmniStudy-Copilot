@@ -23,10 +23,10 @@ export function Header() {
             </div>
             Kabisado
           </Link>
-          <nav className="hidden md:flex flex-row items-center gap-8">
-            <Link href="/chat" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Chat</Link>
-            <Link href="/flashcards" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Flashcards</Link>
-            <Link href="/quizzes" className="text-base font-semibold text-white/90 hover:text-white transition-colors font-mono">Quizzes</Link>
+          <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+            <Link href="#features" className="text-white dark:text-foreground/80 hover:text-white dark:hover:text-foreground transition-colors">Features</Link>
+            <Link href="#how-it-works" className="text-white dark:text-foreground/80 hover:text-white dark:hover:text-foreground transition-colors">How it works</Link>
+            <Link href="/chat" className="text-white dark:text-foreground/80 hover:text-white dark:hover:text-foreground transition-colors">Try AI Chat</Link>
           </nav>
         </div>
 
