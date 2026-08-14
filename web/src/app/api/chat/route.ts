@@ -3,7 +3,7 @@ import { chatModel, systemPrompt } from '@/lib/ai-config';
 
 // Force dynamic execution for API routes that stream
 export const dynamic = 'force-dynamic';
-export const maxDuration = 30; // max Vercel timeout for free tier
+export const runtime = 'edge';
 
 export async function POST(req: Request) {
   try {
