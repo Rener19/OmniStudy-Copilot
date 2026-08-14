@@ -1,10 +1,13 @@
+import { ChatInterface } from '@/components/chat/ChatInterface';
+
+export const metadata = {
+  title: 'Kabisado Copilot - Chat',
+};
+
 export default function ChatPage() {
   return (
-    <div className="py-10">
-      <h1 className="text-3xl font-bold text-foreground">RAG Chat Engine</h1>
-      <p className="mt-4 text-secondary">
-        Placeholder for the Chat Interface. This will stream responses and exact page-number citations from your uploaded PDFs.
-      </p>
+    <div className="flex-1 p-4 md:p-8 flex items-center justify-center max-w-7xl mx-auto w-full">
+      <ChatInterface />
     </div>
   );
 }

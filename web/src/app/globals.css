@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
@@ -9,6 +10,11 @@
   --secondary: #475569;
   --accent: #84CC16;
   --muted: #F0FDF4;
+  --card: #FFFFFF;
+  --card-foreground: #022C22;
+  --border: #E2E8F0;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
 }
 
 @theme inline {
@@ -18,6 +24,11 @@
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
   --font-sans: var(--font-space-grotesk);
   --font-mono: var(--font-dm-sans);
 }
@@ -29,6 +40,11 @@
   --secondary: #A7F3D0;
   --accent: #4ADE80;
   --muted: #064E3B;
+  --card: #064E3B;
+  --card-foreground: #FFFFFF;
+  --border: #065F46;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
 }
 
 body {
